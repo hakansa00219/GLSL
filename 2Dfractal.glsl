@@ -14,7 +14,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     vec2 uv0 = uv;
     vec3 finalColor = vec3(0.0);
 
-    for(float i = 5.0; i > 0.0; i--) {
+    for(float i = 1.0; i > 0.0; i--) {
         uv = fract(uv * 2.0) - 0.5;
 
         float d = length(uv) * exp(-length(uv0));
